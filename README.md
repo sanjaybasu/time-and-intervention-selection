@@ -1,6 +1,6 @@
 # Beyond Risk Scoring: Machine Learning Models for Personalized Intervention Selection in Population Health Management
 
-This repository contains the complete code and analysis pipeline for the research paper "Beyond Risk Scoring: Machine Learning Models for Personalized Intervention Selection in Population Health Management" published in npj Digital Medicine.
+This repository contains the complete code and analysis pipeline for the research paper "Beyond Risk Scoring: Machine Learning Models for Personalized Intervention Selection in Population Health Management" 
 
 ## Overview
 
@@ -266,9 +266,7 @@ If you use this code in your research, please cite:
 @article{basu2024beyond,
   title={Beyond Risk Scoring: Machine Learning Models for Personalized Intervention Selection in Population Health Management},
   author={Basu, Sanjay},
-  journal={npj Digital Medicine},
-  year={2024},
-  publisher={Nature Publishing Group}
+  year={2025}
 }
 ```
 
@@ -279,16 +277,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 - **Author**: Sanjay Basu, MD PhD
-- **Email**: [your-email@domain.com]
-- **Institution**: [Your Institution]
-
-## Acknowledgments
-
-- Waymark care coordination team
-- Clinical reviewers for validation
-- Population health management community
-
-## Disclaimer
-
-This code is provided for research purposes. The synthetic data generator creates realistic but artificial data for demonstration. Any clinical implementation should undergo appropriate validation and regulatory approval.
 
