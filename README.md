@@ -1,6 +1,6 @@
 # Time-and-Intervention Selection
 
-**IMPORTANT NOTICE (February 2026)**: This repository previously contained implementation errors in the demonstration code that have now been corrected. Please use `acuityandintervention_CORRECTED.ipynb` instead of the original notebook. The published study results were not affected by these errors, as they were generated using separate production code with proper methodology.
+**IMPORTANT NOTICE (February 2026)**: This repository previously contained implementation errors in the demonstration code that have now been corrected. The published study results were not affected by these errors, as they were generated using separate production code with proper methodology.
 
 ---
 
