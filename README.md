@@ -17,7 +17,7 @@ The code here is intended to illustrate how to move from **static risk predictio
 The corrected notebook (`acuityandintervention.ipynb`) fixes two errors:
 
 1. **Incorrect date**: Changed from June 1, 2024 to December 31, 2024 (study training period end)
-2. **Missing temporal filter in diagnosis features**: Added filtering to prevent data leakage
+2. **Missing temporal filter in diagnosis features**: Added filtering 
 
 
 ---
