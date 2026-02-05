@@ -110,7 +110,6 @@ This analysis requires:
 - Healthcare utilization events (ADT, encounters) with timestamps
 - Intervention records with timestamps
 
-**All data sources must include timestamp fields** to enable proper temporal filtering and prevent data leakage.
 
 ---
 
