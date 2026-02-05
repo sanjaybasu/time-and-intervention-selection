@@ -1,6 +1,6 @@
 # Time-and-Intervention Selection
 
-**IMPORTANT NOTICE (February 2026)**: This repository previously contained implementation errors in the demonstration code that have now been corrected. The published study results were not affected by these errors, as they were generated using separate production code with proper methodology.
+**IMPORTANT NOTICE (February 2026)**: This repository previously contained an error in the demonstration code that have now been corrected (see below). The published study results were not affected by these errors, as they were generated using separate production code with proper methodology.
 
 ---
 
@@ -9,27 +9,16 @@ The code here is intended to illustrate how to move from **static risk predictio
 - **When** to intervene (timing / acuity-aware triggers)
 - **What** to do (intervention selection / next-best-action)
 
----
-
-## What's in this repo
-
-- **`acuityandintervention_CORRECTED.ipynb`** — CORRECTED end-to-end analysis notebook with proper temporal filtering (USE THIS)
-- `acuityandintervention.ipynb` — Original notebook with known errors (archived for reference)
-- `CORRECTED_CODE.py` — Standalone corrected implementation
-- `CRITICAL_FIXES.md` — Detailed explanation of errors and corrections
-
-**Important**: Use `acuityandintervention_CORRECTED.ipynb` for any new work. The original notebook contains temporal filtering errors that have been documented and corrected.
 
 ---
 
 ## Critical Corrections Applied
 
-The corrected notebook (`acuityandintervention_CORRECTED.ipynb`) fixes two critical errors:
+The corrected notebook (`acuityandintervention.ipynb`) fixes two errors:
 
-1. **Incorrect temporal cutoff date**: Changed from June 1, 2024 to December 31, 2024 (study training period end)
-2. **Missing temporal filter in diagnosis features**: Added filtering to prevent data leakage by excluding future diagnoses
+1. **Incorrect date**: Changed from June 1, 2024 to December 31, 2024 (study training period end)
+2. **Missing temporal filter in diagnosis features**: Added filtering to prevent data leakage
 
-See `CRITICAL_FIXES.md` for detailed technical documentation.
 
 ---
 
@@ -99,7 +88,7 @@ pip install jupyter numpy pandas scikit-learn scipy statsmodels matplotlib
 jupyter notebook
 ```
 
-Then open `acuityandintervention_CORRECTED.ipynb` (not the original).
+Then open `acuityandintervention.ipynb` (not the original).
 
 ### 3) Adapt to your data
 
@@ -110,7 +99,6 @@ This code requires access to healthcare databases and is provided for illustrati
 3. Verify timestamp fields exist for all data sources (diagnoses, events, interventions)
 4. Run the analysis and verify no temporal leakage occurs
 
-**Critical**: The corrected notebook shows the proper implementation of temporal filtering. Review the changes documented in `CRITICAL_FIXES.md` before adapting to your data.
 
 ---
 
@@ -126,28 +114,12 @@ This analysis requires:
 
 ---
 
-## File Guide
-
-| File | Purpose | Status |
-|------|---------|--------|
-| `acuityandintervention_CORRECTED.ipynb` | Corrected analysis notebook | ✓ Use this |
-| `acuityandintervention.ipynb` | Original notebook with errors | ⚠ Reference only |
-| `CORRECTED_CODE.py` | Standalone corrected implementation | ✓ Use as reference |
-| `CRITICAL_FIXES.md` | Technical documentation of corrections | ✓ Read for details |
-
----
-
 ## Citation
 
 If you use methods from this repository, please cite:
 
 Basu S, Patel SY, Sheth P, et al. Integrated acuity prediction and intervention selection for population health management. *Journal of the American Medical Informatics Association*. 2025.
 
----
-
-## Acknowledgments
-
-We thank the JAMIA editorial office for identifying implementation errors in the original demonstration code, enabling corrections before broader use.
 
 ---
 
@@ -155,6 +127,3 @@ We thank the JAMIA editorial office for identifying implementation errors in the
 
 For questions about the methodology or implementation:
 - Sanjay Basu, MD PhD: sanjay.basu@waymarkcare.com
-
-For questions about the corrected code:
-- See `CRITICAL_FIXES.md` for detailed documentation of all corrections
